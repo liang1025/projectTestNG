@@ -1,0 +1,17 @@
+<project default="test">
+
+    <path id="cp">
+        <pathelement location="D:\software\maven-repository\org\testng\testng\6.14.3\testng-6.14.3.jar"/>
+        <pathelement location="D:\software\maven-repository\com\beust\jcommander\1.72\jcommander-1.72.jar"/>
+        <pathelement location="D:\code\projectTestNG\target\test-classes"/>
+    </path>
+
+    <taskdef name="testng" classpathref="cp" classname="org.testng.TestNGAntTask"/>
+
+    <target name="test">
+        <testng classpathref="cp" >
+            <classfileset dir="D:\code\projectTestNG\target\test-classes" includes="TestngHelloWorld.class"/>
+        </testng>
+    </target>
+
+</project>
