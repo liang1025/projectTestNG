@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="D:/code/projectTestNG">
-        <classes>
-            <class name="day1.TestNGHelloWorld">
-                <methods>
-                    <include name="testCase01"/>
-                    <include name="testCase02"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-</suite>
+    <test verbose="2" preserve-order="true" name="projectTestNG">
+        <groups>
+            <run>
+                <include name="sit"/>
+            </run>
+        </groups>
+        <classes >
+            <class name="day2.TestNGHelloWorld"/>
+        </classes >
+    </test> <!-- TestNG -->
+</suite> <!-- Default Suite -->
