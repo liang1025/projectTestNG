@@ -5,10 +5,15 @@
         <groups>
             <run>
                 <include name="sit"/>
+                <include name="dev"/>
             </run>
         </groups>
-        <classes >
-            <class name="day2.TestNGHelloWorld"/>
-        </classes >
+        <classes>
+            <class name="day3.TestNGHelloWorld">
+                <methods>
+                    <include name=".*WorldTest.*"/>
+                </methods>
+            </class>
+        </classes>
     </test> <!-- TestNG -->
 </suite> <!-- Default Suite -->
