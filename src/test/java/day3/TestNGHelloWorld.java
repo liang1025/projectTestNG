@@ -13,20 +13,23 @@ public class TestNGHelloWorld {
     }
 
 
-    @Test(priority = 3)
-    public void helloWorldTest01(){
-        System.out.println("This is Test01!");
+    @Test
+    @Parameters(value = "yihuqingjiu")
+    public void helloWorldTest01(@Optional("温一壶清酒") String str){
+        System.out.println("This is Test01!" + str);
     }
 
-    @Test(priority = 2)
+    @Test
+    public void helloWorldTest02(){
+        System.out.println("This is Test02!");
+    }
+
+    @Test
     public void helloWorldTest03(){
         System.out.println("This is Test03!");
     }
 
-    @Test(priority = 1)
-    public void helloWorldTest02(){
-        System.out.println("This is Test02!");
-    }
+
 
 
 

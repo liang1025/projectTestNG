@@ -2,12 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="projectTestNG">
+
+        <parameter name="yihuqingjiu" value="温一壶清酒 博客园"/>
+
         <groups>
             <run>
                 <include name="sit"/>
                 <include name="dev"/>
             </run>
         </groups>
+
         <classes>
             <class name="day3.TestNGHelloWorld">
                 <methods>
