@@ -1,23 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="projectTestNG">
-
-        <parameter name="yihuqingjiu" value="温一壶清酒 博客园"/>
-
-        <groups>
-            <run>
-                <include name="sit"/>
-                <include name="dev"/>
-            </run>
-        </groups>
-
+<suite name="All Test Suite" group-by-instances="true">
+    <test name="test" verbose="2" preserve-order="true">
         <classes>
-            <class name="day3.TestNGHelloWorld">
-                <methods>
-                    <include name=".*WorldTest.*"/>
-                </methods>
-            </class>
+            <class name="day5.TestFactory"/>
         </classes>
-    </test> <!-- TestNG -->
+    </test>
 </suite> <!-- Default Suite -->
