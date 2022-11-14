@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" group-by-instances="true">
-    <test name="test" verbose="2" preserve-order="true">
+<suite name="All Test Suite" parallel="tests">
+    <test verbose="2" preserve-order="true" name="projectTestNG">
         <classes>
-            <class name="day5.TestFactory"/>
+            <class name="day6.TestNGHelloWorld">
+            </class>
         </classes>
-    </test>
+    </test> <!-- TestNG -->
 </suite> <!-- Default Suite -->
